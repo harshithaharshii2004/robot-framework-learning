@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.13.3 on win32)" generated="2026-10-08T14:39:12.176079" rpa="false" schemaversion="5">
+<suite id="s1" name="Registration Tests" source="C:\Users\harsh\RobotLearing\tests\registration_tests.robot">
+<test id="s1-t1" name="Successful Registration" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-08T14:39:12.452850" level="INFO">Opening browser 'Chrome' to base url 'file:///C:/Users/harsh/RobotLearing/registration/registration.html'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-08T14:39:12.452617" elapsed="0.857853"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-10-08T14:39:13.311123" elapsed="0.027629"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-08T14:39:14.340216" level="INFO">Slept 1 second.</msg>
+<arg>1 seconds</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-08T14:39:13.339139" elapsed="1.001342"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-08T14:39:14.342387" level="INFO">Typing text 'Harshitha' into text field 'id=name'.</msg>
+<arg>id=name</arg>
+<arg>Harshitha</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-08T14:39:14.341333" elapsed="0.091212"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-08T14:39:15.435220" level="INFO">Slept 1 second.</msg>
+<arg>1 seconds</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-08T14:39:14.433874" elapsed="1.001516"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-08T14:39:15.436716" level="INFO">Typing text 'harshitha@gmail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>harshitha@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-08T14:39:15.436158" elapsed="0.108200"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-08T14:39:16.546759" level="INFO">Slept 1 second.</msg>
+<arg>1 seconds</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-08T14:39:15.544922" elapsed="1.002233"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-10-08T14:39:16.550630" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-10-08T14:39:16.633006" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>Test@123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-08T14:39:16.548732" elapsed="0.179714"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-08T14:39:17.732299" level="INFO">Slept 1 second.</msg>
+<arg>1 seconds</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-08T14:39:16.730368" elapsed="1.002223"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-10-08T14:39:17.735145" level="INFO">Typing text '9876543210' into text field 'id=phone'.</msg>
+<arg>id=phone</arg>
+<arg>9876543210</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-08T14:39:17.734196" elapsed="0.232290"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-08T14:39:18.969762" level="INFO">Slept 1 second.</msg>
+<arg>1 seconds</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-08T14:39:17.967810" elapsed="1.002204"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-10-08T14:39:18.971362" level="INFO">Selecting options from selection list 'id=gender' by label Female.</msg>
+<arg>id=gender</arg>
+<arg>Female</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-10-08T14:39:18.970778" elapsed="0.190483"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-08T14:39:20.163289" level="INFO">Slept 1 second.</msg>
+<arg>1 seconds</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-08T14:39:19.162013" elapsed="1.001579"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-10-08T14:39:20.166033" level="INFO">Clicking button 'Register'.</msg>
+<arg>Register</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-10-08T14:39:20.165324" elapsed="0.131465"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Registration Successful</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-10-08T14:39:20.297928" elapsed="0.015338"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-10-08T14:39:20.333605" level="INFO">Current page contains text 'Registration Successful'.</msg>
+<arg>Registration Successful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-10-08T14:39:20.314195" elapsed="0.019735"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-08T14:39:21.337089" level="INFO">Slept 1 second.</msg>
+<arg>1 seconds</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-08T14:39:20.335394" elapsed="1.001979"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-10-08T14:39:21.338370" elapsed="2.249804"/>
+</kw>
+<status status="PASS" start="2026-10-08T14:39:12.451198" elapsed="11.137791"/>
+</test>
+<status status="PASS" start="2026-10-08T14:39:12.178362" elapsed="11.411752"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Registration Tests" id="s1" pass="1" fail="0" skip="0">Registration Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
